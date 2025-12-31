@@ -25,11 +25,10 @@ export default function Home() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Engineering <br />
-                <span className="text-primary">Precision & Innovation</span>
+                Siddharth Ravani
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-                I am a Mechanical Engineer passionate about designing efficient systems and solving complex problems through innovative engineering solutions.
+                A Mechanical Engineering student with a huge interest in mechanical design and modeling. I'm always learning on the job, and spend my free time on side projects that earn me new skills. I am always working to better myself as an engineer and person. I work a lot with CAD tools like SolidWorks, Fusion 360 and AutoCAD to design things like Wodden Toys, Tire rim, and even full assemblies.
               </p>
               
               <div className="flex flex-wrap gap-4">

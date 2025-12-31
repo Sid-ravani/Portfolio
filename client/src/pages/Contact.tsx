@@ -56,33 +56,33 @@ export default function Contact() {
             </p>
 
             <div className="space-y-8">
-              <a href="mailto:engineer@example.com" className="flex items-center gap-4 group">
+              <a href="mailto:sidd.ravani@gmail.com" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="font-medium text-lg">Email</div>
-                  <div className="text-muted-foreground">engineer@example.com</div>
+                  <div className="text-muted-foreground">sidd.ravani@gmail.com</div>
                 </div>
               </a>
 
-              <a href="tel:+1234567890" className="flex items-center gap-4 group">
+              <a href="tel:+919361099087" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="font-medium text-lg">Phone</div>
-                  <div className="text-muted-foreground">+1 (234) 567-890</div>
+                  <div className="text-muted-foreground">+91 9361099087</div>
                 </div>
               </a>
 
-              <a href="#" className="flex items-center gap-4 group">
+              <a href="http://www.linkedin.com/in/sid-ravani" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Linkedin className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="font-medium text-lg">LinkedIn</div>
-                  <div className="text-muted-foreground">linkedin.com/in/engineer</div>
+                  <div className="text-muted-foreground">LinkedIn</div>
                 </div>
               </a>
             </div>
