@@ -26,6 +26,14 @@ export async function registerRoutes(
     try {
       const input = api.messages.create.input.parse(req.body);
       const message = await storage.createMessage(input);
+      
+      // LOGIC: Email notification to sidd.ravani@gmail.com
+      // In a real production app, we would use a service like SendGrid or AWS SES here.
+      // For now, we log it clearly to simulate the notification process.
+      console.log(`[NOTIFICATION] New message from ${input.name} (${input.email}):`);
+      console.log(`Recipient: sidd.ravani@gmail.com`);
+      console.log(`Content: ${input.content}`);
+
       res.status(201).json(message);
     } catch (err) {
       if (err instanceof z.ZodError) {

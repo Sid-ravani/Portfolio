@@ -13,13 +13,26 @@ export function Footer() {
           </div>
           
           <div className="flex items-center gap-4">
-            <a href="#" className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary">
+            <a 
+              href="https://github.com/Sid-ravani" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href="#" className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary">
+            <a 
+              href="https://www.linkedin.com/in/sid-ravani" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:contact@example.com" className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary">
+            <a 
+              href="mailto:sidd.ravani@gmail.com" 
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+            >
               <Mail className="w-5 h-5" />
             </a>
           </div>

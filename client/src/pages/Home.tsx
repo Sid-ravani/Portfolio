@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Settings, PenTool } from "lucide-react";
+import { ArrowRight, Cpu, Settings, Factory, Code2 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const skills = [
     { icon: Settings, label: "Mechanical Design", desc: "SolidWorks, Autodesk Fusion, AutoCAD" },
-    { icon: PenTool, label: "Manufacturing", desc: "3D printing, Laser Cutting" },
-    { icon: Cpu, label: "Programming", desc: "Embedded C, C++, Python" },
+    { icon: Factory, label: "Manufacturing", desc: "3D printing, Laser Cutting" },
+    { icon: Code2, label: "Programming", desc: "Embedded C, C++, Python" },
   ];
 
   return (

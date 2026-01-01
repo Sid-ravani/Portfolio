@@ -57,6 +57,18 @@ export const HARDCODED_PROJECTS = [
     tech: ["Embedded C", "Python", "Kinematics"],
     link: "#"
   },
+  {
+    id: 5,
+    title: "Sample Project",
+    description: "Embedded system design for a 6-axis robotic arm with precise motion control.",
+    fullDescription: "Implemented a complete control system for a robotic arm using Embedded C and Arduino. The project included inverse kinematics calculations for precise positioning and a custom Python GUI for remote operation and monitoring.",
+    images: [
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"
+    ],
+    tech: ["Embedded C", "Python", "Kinematics"],
+    link: "#"
+  },
 ];
 
 export default function ProjectDetail() {
