@@ -19,7 +19,7 @@ export default function Projects() {
               key={project.id} 
               project={{
                 ...project,
-                imageUrl: project.images[0]
+                imageUrl: project.images ? project.images[0] : ""
               } as any} 
             />
           ))}

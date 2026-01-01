@@ -7,33 +7,46 @@ import { useState } from "react";
 export const HARDCODED_PROJECTS = [
   {
     id: 1,
-    title: "Wooden Toy Assembly",
-    description: "A complete mechanical design of interactive wooden toys with moving parts.",
-    fullDescription: "This project involved the design and modeling of various wooden toys using SolidWorks. Each component was carefully toleranced for manufacturing. The assembly includes multiple interactive mechanisms to engage children while ensuring safety and durability.",
+    title: "MDF Mechanical Lock Box",
+    description: "The mechanical lock box works on a Gear-Driven Iris mechanism.",
+    fullDescription: "This project involves designing and fabricating a mechanical lock box made from MDF material, specifically aimed for kids as a fun and educational product. The lock box uses an Iris mechanism - where multiple leaves slide radially to open and close the lid in a smooth circular motion. The mechanical lock box works on a Gear-Driven Iris mechanism. The key plays a crucial role in this system — the gear remains locked and cannot rotate unless the key is inserted. When the correct key is inserted into the gear, it allows rotation, causing the iris leaves to move simultaneously and open the box. ",
     images: [
       "https://images.unsplash.com/photo-1537462713205-e5126c884606?w=800&q=80",
       "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=800&q=80",
       "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=800&q=80"
     ],
-    tech: ["SolidWorks", "CAD Modeling", "Tolerancing"],
+    tech: ["SolidWorks", "CAD Modeling","Laser cutting"],
     link: "#"
   },
   {
     id: 2,
-    title: "Performance Tire Rim",
-    description: "Advanced modeling of a lightweight, high-strength aluminum tire rim.",
-    fullDescription: "Designed for both aesthetics and performance, this tire rim was modeled using Fusion 360. The design focuses on optimizing the weight-to-strength ratio using generative design principles and finite element analysis (FEA) to ensure structural integrity under load.",
+    title: "Engine Piston Keychain for Car Enthusiasts",
+    description: "Interactive MDF keychain with a motor-inspired design",
+    fullDescription: "Interactive MDF keychain with a motor-inspired design, laser-cut to resemble a car piston. When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering.",
     images: [
       "https://images.unsplash.com/photo-1581092921461-eab62e97a782?w=800&q=80",
       "https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=800&q=80",
       "https://images.unsplash.com/photo-1486497395442-885e219f8651?w=800&q=80"
     ],
-    tech: ["Fusion 360", "FEA", "Generative Design"],
+    tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
     link: "#"
   },
   {
     id: 3,
-    title: "Robotic Arm Control System",
+    title: "Zoetrope Walking Animation Model",
+    description: "Intermittent motion model powered by a Geneva wheel mechanism.",
+    fullDescription: "This project showcases a mechanical animation model powered by a Geneva wheel mechanism. By using a Geneva wheel the zoetrope can be rotated in steps (frame by frame). The intermittent motion allows the animation to be viewable with the naked eye due to the persistence of vision, without the need for strobes or cameras.",
+    images: [
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
+      "https://images.unsplash.com/photo-1518314916301-715d7a63527b?w=800&q=80"
+    ],
+    tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Sample Project",
     description: "Embedded system design for a 6-axis robotic arm with precise motion control.",
     fullDescription: "Implemented a complete control system for a robotic arm using Embedded C and Arduino. The project included inverse kinematics calculations for precise positioning and a custom Python GUI for remote operation and monitoring.",
     images: [
@@ -43,14 +56,14 @@ export const HARDCODED_PROJECTS = [
     ],
     tech: ["Embedded C", "Python", "Kinematics"],
     link: "#"
-  }
+  },
 ];
 
 export default function ProjectDetail() {
   const params = useParams();
   const id = parseInt(params.id || "");
   const project = HARDCODED_PROJECTS.find(p => p.id === id);
-  const [activeImage, setActiveImage] = useState(project?.images[0] || "");
+  const [activeImage, setActiveImage] = useState(project?.images?.[0] || "");
 
   if (!project) {
     return (
@@ -87,7 +100,7 @@ export default function ProjectDetail() {
             </div>
             
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
-              {project.images.map((img, idx) => (
+              {project.images?.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveImage(img)}
