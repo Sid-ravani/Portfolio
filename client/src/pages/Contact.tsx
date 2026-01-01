@@ -52,7 +52,7 @@ export default function Contact() {
           >
             <h1 className="font-display text-4xl font-bold mb-6">Get in Touch</h1>
             <p className="text-lg text-muted-foreground mb-12">
-              Have a project in mind or want to discuss engineering opportunities? I'd love to hear from you.
+              Let's Talk.
             </p>
 
             <div className="space-y-8">
