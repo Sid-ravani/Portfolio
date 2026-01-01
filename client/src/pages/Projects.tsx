@@ -15,7 +15,13 @@ export default function Projects() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {HARDCODED_PROJECTS.map((project) => (
-            <ProjectCard key={project.id} project={project as any} />
+            <ProjectCard 
+              key={project.id} 
+              project={{
+                ...project,
+                imageUrl: project.images[0]
+              } as any} 
+            />
           ))}
         </div>
       </div>
