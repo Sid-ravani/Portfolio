@@ -11,8 +11,8 @@ export const HARDCODED_PROJECTS = [
     description: "The mechanical lock box works on a Gear-Driven Iris mechanism.",
     fullDescription: "This project involves designing and fabricating a mechanical lock box made from MDF material, specifically aimed for kids as a fun and educational product. The lock box uses an Iris mechanism - where multiple leaves slide radially to open and close the lid in a smooth circular motion. The mechanical lock box works on a Gear-Driven Iris mechanism. The key plays a crucial role in this system — the gear remains locked and cannot rotate unless the key is inserted. When the correct key is inserted into the gear, it allows rotation, causing the iris leaves to move simultaneously and open the box. ",
     images: [
-      "/lockbox.gif",
-      "/lockbox_design.png"
+      "/lockbox_design.png",
+      "/lockbox.gif"
     ],
     tech: ["SolidWorks", "CAD Modeling","Laser cutting"],
     link: "#"
@@ -24,7 +24,7 @@ export const HARDCODED_PROJECTS = [
     fullDescription: "Interactive MDF keychain with a motor-inspired design, laser-cut to resemble a car piston. When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering.",
     images: [
       "/keychain.gif",
-      "https://images.unsplash.com/photo-1581092921461-eab62e97a782?w=800&q=80"
+      "/keychain_design.png"
     ],
     tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
     link: "#"
