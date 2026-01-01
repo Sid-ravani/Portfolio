@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <h3 className="font-display font-semibold text-lg">Engineering Portfolio</h3>
+            <h3 className="font-display font-semibold text-lg">Siddharth Ravani</h3>
             <p className="text-sm text-muted-foreground mt-1">
               Building the future, one project at a time.
             </p>
@@ -26,7 +26,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Mechanical Engineering Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Siddharth Ravani. All rights reserved.
         </div>
       </div>
     </footer>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   const skills = [
     { icon: Settings, label: "Mechanical Design", desc: "CAD modeling & simulation" },
-    { icon: Cpu, label: "Systems Engineering", desc: "Complex system integration" },
+    { icon: Cpu, label: "Programming", desc: "Embedded C, C++, Python" },
     { icon: PenTool, label: "Prototyping", desc: "Rapid fabrication & testing" },
   ];
 
@@ -28,7 +28,7 @@ export default function Home() {
                 Siddharth Ravani
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-                A Mechanical Engineering student with a huge interest in mechanical design and modeling. I'm always learning on the job, and spend my free time on side projects that earn me new skills. I am always working to better myself as an engineer and person. I work a lot with CAD tools like SolidWorks, Fusion 360 and AutoCAD to design things like Wodden Toys, Tire rim, and even full assemblies.
+                Addicted to Bettering Myself.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -105,7 +105,7 @@ export default function Home() {
                   My experience spans from CAD design and thermal analysis to rapid prototyping and manufacturing support. I believe in the power of engineering to solve real-world challenges and improve lives.
                 </p>
                 <p>
-                  When I'm not designing in SolidWorks or AutoCAD, you can find me tinkering with 3D printers or exploring the latest developments in robotics.
+                  I am always working to better myself as an engineer and person.
                 </p>
               </div>
             </motion.div>
