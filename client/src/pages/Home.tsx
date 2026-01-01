@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const skills = [
-    { icon: Settings, label: "Mechanical Design", desc: "CAD modeling & simulation" },
+    { icon: Settings, label: "Mechanical Design", desc: "SolidWorks, Autodesk Fusion, AutoCAD" },
+    { icon: PenTool, label: "Manufacturing", desc: "3D printing, Laser Cutting" },
     { icon: Cpu, label: "Programming", desc: "Embedded C, C++, Python" },
-    { icon: PenTool, label: "Prototyping", desc: "Rapid fabrication & testing" },
   ];
 
   return (

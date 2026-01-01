@@ -42,29 +42,6 @@ export function Navigation() {
               )}
             </Link>
           ))}
-
-          <div className="h-6 w-px bg-border mx-2" />
-
-          {user ? (
-            <div className="flex items-center gap-2">
-              <Link href="/admin">
-                <Button variant="ghost" size="sm" className="hidden sm:flex">
-                  <Settings className="w-4 h-4 mr-2" />
-                  Admin
-                </Button>
-              </Link>
-              <Button variant="ghost" size="sm" onClick={() => logout()}>
-                <LogOut className="w-4 h-4" />
-              </Button>
-            </div>
-          ) : (
-            <Link href="/api/login">
-              <Button variant="outline" size="sm" className="gap-2">
-                <LogIn className="w-4 h-4" />
-                <span className="hidden sm:inline">Admin Login</span>
-              </Button>
-            </Link>
-          )}
         </nav>
       </div>
     </header>

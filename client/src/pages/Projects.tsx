@@ -1,27 +1,8 @@
-import { useProjects } from "@/hooks/use-projects";
-import { ProjectCard } from "@/components/ProjectCard";
-import { Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { HARDCODED_PROJECTS } from "./ProjectDetail";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Projects() {
-  const { data: projects, isLoading, error } = useProjects();
-
-  if (isLoading) {
-    return (
-      <div className="min-h-[60vh] flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-primary" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-[60vh] flex items-center justify-center text-destructive">
-        Failed to load projects. Please try again later.
-      </div>
-    );
-  }
-
   return (
     <div className="py-12 md:py-20">
       <div className="container mx-auto px-4">
@@ -32,17 +13,11 @@ export default function Projects() {
           </p>
         </div>
 
-        {projects && projects.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20 bg-muted/30 rounded-2xl border border-dashed border-border">
-            <p className="text-muted-foreground text-lg">No projects added yet.</p>
-          </div>
-        )}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {HARDCODED_PROJECTS.map((project) => (
+            <ProjectCard key={project.id} project={project as any} />
+          ))}
+        </div>
       </div>
     </div>
   );
