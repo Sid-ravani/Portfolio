@@ -17,7 +17,7 @@ export function Footer() {
               href="https://github.com/Sid-ravani" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-black"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -25,13 +25,13 @@ export function Footer() {
               href="https://www.linkedin.com/in/sid-ravani" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-black"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
               href="mailto:sidd.ravani@gmail.com" 
-              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-primary"
+              className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-black"
             >
               <Mail className="w-5 h-5" />
             </a>

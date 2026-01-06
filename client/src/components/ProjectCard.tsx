@@ -14,20 +14,19 @@ interface Project {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <motion.div
-      whileHover={{ y: -5 }}
-      transition={{ duration: 0.2 }}
-    >
-      <Card className="h-full flex flex-col overflow-hidden border-border/50 hover:shadow-xl transition-all duration-300">
+    <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.2 }}>
+      <Card className="h-full flex flex-col overflow-hidden border-border/50 hover:shadow-2xl transition-all duration-300">
         <div className="aspect-video relative overflow-hidden">
-          <img 
-            src={project.imageUrl} 
+          <img
+            src={project.imageUrl}
             alt={project.title}
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           />
         </div>
         <CardHeader>
-          <CardTitle className="font-display text-xl">{project.title}</CardTitle>
+          <CardTitle className="font-display text-xl">
+            {project.title}
+          </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
           <p className="text-muted-foreground leading-relaxed line-clamp-3">
@@ -36,8 +35,11 @@ export function ProjectCard({ project }: { project: Project }) {
         </CardContent>
         <CardFooter className="pt-0">
           <Link href={`/projects/${project.id}`} className="w-full">
-            <Button variant="ghost" className="w-full group">
-              View Details 
+            <Button
+              variant="ghost"
+              className="px-3 py-2 group border rounded-full border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 "
+            >
+              View Details
               <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>

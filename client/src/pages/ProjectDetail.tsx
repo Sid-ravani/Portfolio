@@ -11,9 +11,8 @@ export const HARDCODED_PROJECTS = [
     description: "The mechanical lock box works on a Gear-Driven Iris mechanism.",
     fullDescription: "This project involves designing and fabricating a mechanical lock box made from MDF material, specifically aimed for kids as a fun and educational product. The lock box uses an Iris mechanism - where multiple leaves slide radially to open and close the lid in a smooth circular motion. The mechanical lock box works on a Gear-Driven Iris mechanism. The key plays a crucial role in this system — the gear remains locked and cannot rotate unless the key is inserted. When the correct key is inserted into the gear, it allows rotation, causing the iris leaves to move simultaneously and open the box. ",
     images: [
-      "/lockbox.gif",
-      "/lockbox_design.png",
-      "/lockbox_design_2.png"
+      "/lockbox_design_2.png",
+      "/lockbox.gif"
     ],
     tech: ["SolidWorks", "CAD Modeling","Laser cutting"],
     link: "#"
@@ -24,9 +23,8 @@ export const HARDCODED_PROJECTS = [
     description: "Interactive MDF keychain with a motor-inspired design",
     fullDescription: "Interactive MDF keychain with a motor-inspired design, laser-cut to resemble a car piston. When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering.",
     images: [
+      "/keychain_design_2.png",
       "/keychain.gif",
-      "/keychain_design.png",
-      "/keychain_design_2.png"
     ],
     tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
     link: "#"
@@ -38,8 +36,7 @@ export const HARDCODED_PROJECTS = [
     fullDescription: "This project showcases a mechanical animation model powered by a Geneva wheel mechanism. By using a Geneva wheel the zoetrope can be rotated in steps (frame by frame). The intermittent motion allows the animation to be viewable with the naked eye due to the persistence of vision, without the need for strobes or cameras.",
     images: [
       "/zoetrope_real.jpg",
-      "/zoetrope_design.png",
-      "/zoetrope_design_2.png"
+      "/zoetrope_design_2.png",
     ],
     tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
     link: "#"
@@ -104,7 +101,7 @@ export default function ProjectDetail() {
                   key={idx}
                   onClick={() => setActiveImage(img)}
                   className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                    activeImage === img ? "border-primary scale-95" : "border-transparent hover:border-primary/50"
+                    activeImage === img ? "border-black scale-95" : "border-transparent hover:border-black/50"
                   }`}
                 >
                   <img src={img} alt={`${project.title} ${idx + 1}`} className="w-full h-full object-cover" />
@@ -117,7 +114,7 @@ export default function ProjectDetail() {
           
           <div className="flex flex-wrap gap-2 mb-8">
             {project.tech.map(t => (
-              <span key={t} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+              <span key={t} className="px-3 py-1 bg-black/10 text-black rounded-full text-sm font-medium">
                 {t}
               </span>
             ))}
@@ -129,13 +126,7 @@ export default function ProjectDetail() {
             </p>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-border">
-            <Button size="lg" asChild className="gap-2">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                View Project Files <ExternalLink className="w-4 h-4" />
-              </a>
-            </Button>
-          </div>
+          
         </motion.div>
       </div>
     </div>
