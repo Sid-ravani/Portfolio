@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { HARDCODED_PROJECTS } from "./ProjectDetail";
+import { PROJECTS } from "@/data/project.ts";
 import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Projects() {
@@ -16,7 +16,7 @@ export default function Projects() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {HARDCODED_PROJECTS.map((project) => (
+          {PROJECTS.map((project) => (
             <ProjectCard
               key={project.id}
               project={
