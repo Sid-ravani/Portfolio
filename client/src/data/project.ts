@@ -30,43 +30,30 @@ export const PROJECTS = [
     ],
     images: ["/lockbox_design_2.png", "/lockbox.gif"],
     tech: ["SolidWorks", "CAD Modeling"],
-    
   },
   {
     id: 3,
     title: "Engine Piston Keychain for Car Enthusiasts",
     description: "Interactive MDF keychain with a motor-inspired design",
     fullDescription: [
-      "Interactive MDF keychain with a motor-inspired design, laser-cut to resemble a car piston. When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering.",
+      "Designed in SolidWorks, this miniature piston keychain takes inspiration from a real engine component and scales it down into something you can carry around every day.",
+      "When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering",
     ],
     images: ["/keychain_design_2.png", "/keychain.gif"],
-    tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
+    tech: ["SolidWorks", "CAD Modeling"],
   },
   {
     id: 4,
     title: "Zoetrope Walking Animation Model",
     description:
-      "Intermittent motion model powered by a Geneva wheel mechanism.",
+      "A Geneva wheel–driven zoetrope, designed in SolidWorks and laser cut in MDF, creating visible animation through pure mechanical motion.",
     fullDescription: [
-      "This project showcases a mechanical animation model powered by a Geneva wheel mechanism. By using a Geneva wheel the zoetrope can be rotated in steps (frame by frame). The intermittent motion allows the animation to be viewable with the naked eye due to the persistence of vision, without the need for strobes or cameras.",
+      "A zoetrope is a mechanical animation device that creates the illusion of motion through a sequence of still frames. In this project, that illusion is driven entirely by a Geneva wheel mechanism, which converts continuous rotation into precise, step-by-step movement.",
+      "The Geneva wheel allows the zoetrope to rotate in discrete steps, advancing the animation one frame at a time. This intermittent motion is key—it slows the rotation just enough for each frame to be clearly visible, allowing the walking animation to be perceived by the naked eye.",
+      "The complete model was first designed and assembled in SolidWorks. Once finalized, the parts were laser cut from MDF and physically assembled. This step introduced real-world constraints, where small inaccuracies could affect motion, making tolerances and fit especially important.",
     ],
     images: ["/zoetrope_real.jpg", "/zoetrope_design_2.png"],
     tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
   },
-  {
-    id: 5,
-    title: "AutoCAD / Fusion Design",
-    description:
-      "Embedded system design for a 6-axis robotic arm with precise motion control.",
-    fullDescription: [
-      "Implemented a complete control system for a robotic arm using Embedded C and Arduino. The project included inverse kinematics calculations for precise positioning and a custom Python GUI for remote operation and monitoring.",
-    ],
-    images: [
-      "/tire_rim_2.jpg",
-      "/tire_rim.jpg",
-      "/Mecanum_wheel .jpg",
-      "/mechanum_wheel.jpg",
-    ],
-    tech: ["AutoCAD", "Autodesk Fusion 360", "CAD Modeling"],
-  },
+  
 ] as const;
