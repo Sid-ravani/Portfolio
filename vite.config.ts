@@ -2,17 +2,17 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// Detect if running on Replit
 const isReplit =
   process.env.REPL_ID !== undefined && process.env.NODE_ENV !== "production";
 
 export default defineConfig({
   root: path.resolve(import.meta.dirname, "client"),
+
   plugins: [
     react(),
-    // Only enable Replit plugins when running on Replit in dev
-    ...(isReplit ? [] : []),
+    ...(isReplit ? [] : []), // Only dev plugins on Replit
   ],
+
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -20,8 +20,11 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
+
+  base: "./", // ✅ Critical for Vercel deployment
+
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"), // ✅ standard
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
 });
