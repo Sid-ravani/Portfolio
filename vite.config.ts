@@ -2,17 +2,17 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
+// Detect if running on Replit
 const isReplit =
   process.env.REPL_ID !== undefined && process.env.NODE_ENV !== "production";
 
 export default defineConfig({
   root: path.resolve(import.meta.dirname, "client"),
-
   plugins: [
     react(),
-    ...(isReplit ? [] : []), // disable Replit plugins entirely
+    // Only enable Replit plugins when running on Replit in dev
+    ...(isReplit ? [] : []),
   ],
-
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -20,9 +20,8 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
-
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"),
+    outDir: path.resolve(import.meta.dirname, "dist"), // ✅ standard
     emptyOutDir: true,
   },
 });
