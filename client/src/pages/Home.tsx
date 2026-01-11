@@ -109,7 +109,7 @@ export default function Home() {
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/Sid-ravani.png"
+                  src="/Sid_ravani.jpeg"
                   alt="Engineering Workspace"
                   className="w-full h-full object-cover"
                 />
