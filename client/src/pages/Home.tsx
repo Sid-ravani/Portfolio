@@ -3,6 +3,8 @@ import { ArrowRight, Settings, Factory, Code2, Mail, Phone, FileText } from "luc
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import sidpic from "@/assets/Sid_ravani.jpeg"
+import resume from "@/assets/resume.pdf"
 
 export default function Home() {
   const skills = [
@@ -57,7 +59,7 @@ export default function Home() {
                     View My Work <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
-                <a href="/resume.pdf" download="Siddharth_Ravani_Resume.pdf">
+                <a href={resume} download="Siddharth_Ravani_Resume.pdf">
                   <Button
                     size="lg"
                     variant="outline"
@@ -109,7 +111,7 @@ export default function Home() {
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/Sid_ravani.jpeg"
+                  src={sidpic}
                   alt="Engineering Workspace"
                   className="w-full h-full object-cover"
                 />

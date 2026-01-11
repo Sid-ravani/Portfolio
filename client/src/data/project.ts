@@ -1,3 +1,13 @@
+import horseImg from "@/assets/Horse_walking.png";
+import horseGif from "@/assets/Horse_walking_animation.gif";
+import Jansen from "@/assets/jansens mechanism.jpeg";
+import keygif from "@/assets/keychain.gif";
+import keypng2 from "@/assets/keychain_design_2.png";
+import lockbox from "@/assets/lockbox_design_2.png";
+import lockboxgif from "@/assets/lockbox.gif";
+// import lockboxpng from "@/assets/lockbox_design.png";
+import zoetropepng from "@/assets/zoetrope_design.png";
+import zoetropepng2 from "@/assets/zoetrope_design_2.png";
 export const PROJECTS = [
   {
     id: 1,
@@ -12,9 +22,9 @@ export const PROJECTS = [
       "In the end, a single rotating input produced a smooth, coordinated walking cycle. A carefully tuned linkage doing what it’s meant to do.",
     ],
     images: [
-      "/Horse_walking.png",
-      "/Horse_walking_animation.gif",
-      "/jansens mechanism.jpeg",
+      horseImg,
+      horseGif,
+      Jansen
     ],
     tech: ["SolidWorks", "CAD Modeling"],
   },
@@ -28,7 +38,7 @@ export const PROJECTS = [
       "The entire lock box was modeled and assembled in SolidWorks, with the iris and gear system. The goal was to create a purely mechanical opening system that feels intuitive and satisfying, without relying on electronics.",
       "Since the design was intended for MDF fabrication in the future, material thickness and part geometry were considered during modeling, even though the build remains at the CAD stage.",
     ],
-    images: ["/lockbox_design_2.png", "/lockbox.gif"],
+    images: [lockbox, lockboxgif],
     tech: ["SolidWorks", "CAD Modeling"],
   },
   {
@@ -39,7 +49,7 @@ export const PROJECTS = [
       "Designed in SolidWorks, this miniature piston keychain takes inspiration from a real engine component and scales it down into something you can carry around every day.",
       "When the gears are turned, the piston mimics the motion of a real engine, making it a unique piece for automotive enthusiasts. Perfect for those who love cars and mechanical engineering",
     ],
-    images: ["/keychain_design_2.png", "/keychain.gif"],
+    images: [keypng2, keygif],
     tech: ["SolidWorks", "CAD Modeling"],
   },
   {
@@ -52,8 +62,7 @@ export const PROJECTS = [
       "The Geneva wheel allows the zoetrope to rotate in discrete steps, advancing the animation one frame at a time. This intermittent motion is key—it slows the rotation just enough for each frame to be clearly visible, allowing the walking animation to be perceived by the naked eye.",
       "The complete model was first designed and assembled in SolidWorks. Once finalized, the parts were laser cut from MDF and physically assembled. This step introduced real-world constraints, where small inaccuracies could affect motion, making tolerances and fit especially important.",
     ],
-    images: ["/zoetrope_real.jpg", "/zoetrope_design_2.png"],
+    images: [zoetropepng2, zoetropepng],
     tech: ["SolidWorks", "CAD Modeling", "Laser Cutting"],
   },
-  
 ] as const;
