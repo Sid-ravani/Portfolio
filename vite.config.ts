@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
 
-  base: "/", // ✅ IMPORTANT for Vercel
+  base: "./", // ✅ THIS FIXES THE MIME ERROR
 
   build: {
     outDir: path.resolve(__dirname, "dist"),
