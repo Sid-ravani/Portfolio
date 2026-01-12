@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import sidpic from "@/assets/Sid_ravani.jpeg"
-import resume from "@/assets/Sid-ravani.pdf"
+import resume from "@/assets/Sid-Resume.pdf"
 
 export default function Home() {
   const skills = [
