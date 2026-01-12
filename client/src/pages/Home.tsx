@@ -59,7 +59,12 @@ export default function Home() {
                     View My Work <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
-                <a href={resume} download="Siddharth_Ravani_Resume.pdf">
+                <a
+                  href={resume}
+                  download="Siddharth_Ravani_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     size="lg"
                     variant="outline"
